@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+
+.seccion{
+    width: 320px;
+    height: 568px;
+    border: 1px solid black;
+}
+
+.ocultar{
+    display: none;
+}
