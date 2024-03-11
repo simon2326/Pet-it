@@ -1,30 +1,30 @@
-*{
+* {
     margin: 0;
 }
 
-.seccion{
+.seccion {
     width: 365px;
     height: 568px;
     border: 1px solid black;
 }
 
-.ocultar{
+.ocultar {
     display: none;
 }
 
-.paseos{
+.paseos {
     background-image: url("/dev/img/cronograma.png");
     background-size: cover;
     background-color: blueviolet;
 }
 
-.item{
+.item {
     display: flex;
     width: 300px;
     background: blue;
 }
 
-.header{
+.header {
     width: 365px;
     height: 90px;
     background: rgba(126, 255, 255, 0.7);
@@ -32,18 +32,25 @@
     justify-content: center;
 }
 
-.calendario{
+.carrusel {
     width: 365px;
     height: 120px;
     background: rgba(255, 0, 128, 0.7);
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
-.cronograma{
+.cronograma {
     width: 365px;
     height: 360px;
     background: rgba(255, 165, 0, 0.7);
 }
 
-.titulo{
+.titulo {
     font-size: 13px;
 }
+
+.anterior, .siguiente {
+    display: none;
+  }

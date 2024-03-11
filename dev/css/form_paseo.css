@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+.seccion{
+    width: 365px;
+    height: 568px;
+    border: 1px solid black;
+}
+.form_paseo{
+    background-image: url("/dev/img/form_paseo.png");
+    background-size: cover;
+    background-color: blueviolet;
+}
+
+.item {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 365px;
+    height: 60px;
+    background: rgba(255, 0, 128, 0.7);
+}
+
+.header{
+    width: 365px;
+    height: 90px;
+    background: rgba(126, 255, 255, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+  
+.text{
+    margin-top: 10px;
+    height: 60px;
+}
+
+.titulo{
+    padding-top: 10px;
+}
