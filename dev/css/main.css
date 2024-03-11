@@ -3,11 +3,47 @@
 }
 
 .seccion{
-    width: 320px;
+    width: 365px;
     height: 568px;
     border: 1px solid black;
 }
 
 .ocultar{
     display: none;
+}
+
+.home{
+    background-image: url("/dev/img/home.png");
+    background-size: cover;
+    background-color: blueviolet;
+}
+
+.item{
+    display: flex;
+    width: 300px;
+    background: blue;
+}
+
+.header{
+    width: 365px;
+    height: 90px;
+    background: rgba(126, 255, 255, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel{
+    width: 365px;
+    height: 206px;
+    background: rgba(255, 0, 128, 0.7);
+}
+
+.datos_curiosos{
+    width: 365px;
+    height: 272px;
+    background: rgba(255, 165, 0, 0.7);
+}
+
+.titulo{
+    font-size: 13px;
 }
