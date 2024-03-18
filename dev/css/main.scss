@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .seccion{
     max-width: 365px;
     height: 568px;
@@ -61,12 +65,12 @@
     padding: 2em;
 
     transition: all .5s ease;
-    transform: translateX(-50%);
+    transform: translateX(0%);
 
 }
 
 .carrusel .img{
-    width: calc(100%/2);
+    width: calc(100%/2 - 2em);
     min-height: 10vh;
     background-color: lime;
 }
@@ -89,6 +93,18 @@
     margin: 1em 1em 0;
     background-color: blue;
 
+}
+
+li {
+    list-style-type: none;
+  }
+
+img {
+max-width: 100%;
+width: 100%;
+display: block;
+object-fit: cover;
+object-position: center center;
 }
 
 .carrusel .punto.activo{
