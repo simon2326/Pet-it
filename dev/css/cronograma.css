@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    
 }
 
 .seccion {
@@ -16,6 +17,7 @@
     background-image: url("/dev/img/cronograma.png");
     background-size: cover;
     background-color: blueviolet;
+    /*overflow-x: auto;*/
 }
 
 .item {
@@ -24,14 +26,6 @@
     background: rgba(0, 0, 255, 0.171);
 }
 
-/*
-.header {
-    width: 365px;
-    height: 90px;
-    background: rgba(126, 255, 255, 0.7);
-    align-items: center;
-    justify-content: center;
-}*/
 .encabezado {
     width: 365px;
     height: 60px;
@@ -60,23 +54,34 @@
     margin-left: 100px;
 }
 
-.flecha img{
+.flecha img {
     width: 28px;
     height: 28px;
-    
+
 }
-.menu img{
+
+.menu img {
     width: 28px;
     height: 28px;
 }
+
 .carrusel {
+    display: flex;
     width: 365px;
     height: 120px;
     background: rgba(255, 0, 128, 0.7);
     width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
+    flex-wrap: nowrap;
 }
+
+.dia {
+    background: none;
+    height: 80px;
+}
+ .carrusel img{
+    width: 50px;
+    height: 50px;
+ }
 
 .cronograma {
     width: 365px;
@@ -105,18 +110,6 @@
     flex-direction: column;
 }
 
-/*
-.weekly-schedule h1 {
-    margin-top: 20px;
-    font-size: 1.3rem;
-    font-weight: 700;
-}*/
-/*
-.weekly-schedule h3 {
-    margin-top: 30px;
-    font-size: 0.5rem;
-    font-weight: 200px;
-}*/
 .day h3 {
     margin-top: 10px;
 }
@@ -161,13 +154,6 @@
     font-weight: 600;
 }
 
-/*
-  .day p {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transform: translateY(-3px);
-  }*/
 
 .activity {
     border-left: 3px solid #484d53;
