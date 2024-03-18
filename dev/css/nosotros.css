@@ -10,9 +10,33 @@
     background-size: cover;
 }
 
-.nosotros {
+.seccion1 {
+    display: flex;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/*.nosotros {
     background-image: url("/dev/img/nosotros.png");
     background-size: cover;
+}*/
+
+.imagen-placeholder {
+    flex: 1;
+    background-color: rgba(176, 251, 186, 0.7); /* Color de fondo del marcador de posición */
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
+}
+
+.imagen {
+    flex: 1;
+    position: relative; 
+}
+
+.imagen img {
+    width: 120%;
+    height: auto;
 }
 
 .titulo {
@@ -21,7 +45,22 @@
     text-align: center;
 }
 
+.subtitulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 .contenido {
-    padding: 10px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    background-color: rgba(176, 251, 186, 0.7);
+    position: relative;
+    text-align: center;
 }
 
