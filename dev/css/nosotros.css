@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+.seccion {
+    width: 365px;
+    height: 568px;
+    border: 1px solid black;
+    background-image: url("/dev/img/nosotros.png");
+    background-size: cover;
+}
+
+.nosotros {
+    background-image: url("/dev/img/nosotros.png");
+    background-size: cover;
+}
+
+.titulo {
+    background: rgba(126, 255, 255, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+.contenido {
+    padding: 10px;
+}
+
