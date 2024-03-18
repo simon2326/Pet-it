@@ -1,0 +1,20 @@
+.seccion{
+    max-width: 365px;
+    height: 568px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.paseadores{
+    background-image: url("/dev/img/detalle_paseador.png");
+    background-size: cover;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+.foto{
+    width: 90%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+.seccion{
+    max-width: 365px;
+    height: 568px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.ocultar{
+    display: none;
+}
+
+.home{
+    background-image: url("/dev/img/home.png");
+    background-size: cover;
+    background-color: blueviolet;
+}
+
+.item{
+    display: flex;
+    width: 300px;
+    background: blue;
+}
+
+.header{
+    width: 365px;
+    height: 90px;
+    background: rgba(126, 255, 255, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 45px;
+    height: auto;
+    margin: 15px;
+}
+
+.carrusel{
+    width: 365px;
+    height: 200px;
+    background: rgba(255, 0, 128, 0.7);
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.carrusel img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.datos_curiosos{
+    width: 85%;
+    height: 279px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(255, 165, 0, 0.7);
+    margin: 0 auto;
+}
+
+.data-curiosa {
+    width: 48%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.data-curiosa img {
+    width: 100%;
+    margin: 10px;
+    height: auto;
+    display: block;
+}
+
+.titulo{
+    font-size: 13px;
+}
