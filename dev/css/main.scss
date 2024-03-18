@@ -49,17 +49,52 @@
     width: 365px;
     height: 200px;
     background: rgba(255, 0, 128, 0.7);
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    margin: 0 auto;
 }
 
-.carrusel img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
+.carrusel .carru{
+    width: 200%;
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+
+    transition: all .5s ease;
+    transform: translateX(-50%);
+
 }
+
+.carrusel .img{
+    width: calc(100%/2);
+    min-height: 10vh;
+    background-color: lime;
+}
+
+.carrusel .puntos{
+    width: 100%;
+    background-color: red;
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 0;
+
+}
+
+.carrusel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    background-color: blue;
+
+}
+
+.carrusel .punto.activo{
+    background-color: yellowgreen;
+}
+
 
 .datos_curiosos{
     width: 85%;
