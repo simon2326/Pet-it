@@ -19,25 +19,31 @@
     background-color: blueviolet;
 }
 
-.item{
-    display: flex;
-    width: 300px;
-    background: blue;
-}
-
 .header{
     width: 365px;
     height: 90px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
     background: rgba(126, 255, 255, 0.7);
+    justify-items: center; 
     align-items: center;
-    justify-content: center;
 }
-
-.logo{
+  
+  .logo {
     width: 45px;
+  }
+  
+  .titulo {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .menu {
+    width: 30px;
     height: auto;
-    margin: 15px;
-}
+  }
 
 .carrusel{
     width: 365px;
@@ -79,6 +85,3 @@
     display: block;
 }
 
-.titulo{
-    font-size: 13px;
-}
