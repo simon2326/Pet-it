@@ -5,7 +5,7 @@
 .seccion {
     width: 365px;
     height: 568px;
-    border: 1px solid black;
+    border: 1px solid black;  
 }
 
 .tarifas {
@@ -62,17 +62,16 @@
 }
 
 .cuadro-superior {
-    background: rgba(255, 255, 255, 0.7); /* Color de fondo para el cuadro superior */
+    background: rgba(255, 255, 255, 0.7); 
     border: 2px solid #ccc;
     border-radius: 10px;
-    margin-bottom: 5px; /* Espacio entre los cuadros */
     padding: 10px;
     display: flex;
     align-items: center;
 }
 
 .cuadro-inferior {
-    background: rgba(255, 255, 255, 0.7); /* Color de fondo para el cuadro inferior */
+    background: rgba(255, 255, 255, 0.7); 
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 10px;
