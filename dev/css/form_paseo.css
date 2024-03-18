@@ -1,38 +1,50 @@
-*{
+* {
     margin: 0;
 }
-.seccion{
+
+.seccion {
     width: 365px;
     height: 568px;
     border: 1px solid black;
 }
-.form_paseo{
+
+.form_paseo {
     background-image: url("/dev/img/form_paseo.png");
     background-size: cover;
-    background-color: blueviolet;
 }
 
 .item {
     display: flex;
     flex-direction: column-reverse;
-    width: 365px;
+    width: 345px;
     height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     background: rgba(255, 0, 128, 0.7);
 }
 
-.header{
+.header {
+    display: flex;
     width: 365px;
     height: 90px;
     background: rgba(126, 255, 255, 0.7);
     align-items: center;
     justify-content: center;
 }
-  
-.text{
+
+.text {
     margin-top: 10px;
-    height: 60px;
+    height: 80px;
 }
 
-.titulo{
+.titulo {
     padding-top: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 0, 0, 0.7);
+    border-radius: 20px;
 }

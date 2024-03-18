@@ -51,6 +51,101 @@
     font-size: 13px;
 }
 
-.anterior, .siguiente {
+.cronograma h1{
+    position: absolute;
+    left: 30px;
+    top: 220px
+}
+
+.anterior,
+.siguiente {
     display: none;
+}
+
+
+.weekly-schedule {
+    display: flex;
+    flex-direction: column;
+}
+/*
+.weekly-schedule h1 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}*/
+/*
+.weekly-schedule h3 {
+    margin-top: 30px;
+    font-size: 0.5rem;
+    font-weight: 200px;
+}*/
+.day h3{
+    margin-top: 10px;
+}
+.calendar {
+    position:absolute;
+    margin-top: 30px;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    left: 25px;
+    top: 220px;
+}
+
+.day-and-activity {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    border-radius: 14px;
+    margin-bottom: 5px;
+    color: #484d53;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+}
+
+.activity-one {
+    background-color: rgba(97, 211, 20, 0.5);
+    /*background-image: linear-gradient(240deg,
+            rgb(124, 136, 224) 0%,
+            #c3f4fc 100%);*/
+}
+
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-10px);
+  }
+  
+  .day h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  /*
+  .day p {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transform: translateY(-3px);
+  }*/
+  
+  .activity {
+    border-left: 3px solid #484d53;
+  }
+  
+  .participants {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .participants img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    z-index: calc(2 * var(--i));
+    margin-left: -10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+  }
+  .btn{
+    margin-right: 3px;
   }
