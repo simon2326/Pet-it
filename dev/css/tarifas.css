@@ -15,7 +15,7 @@
 
 .item {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 345px;
     height: 175px;
     padding: 10px;
