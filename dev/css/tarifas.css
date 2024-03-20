@@ -7,6 +7,43 @@
     height: 568px;
     border: 1px solid black;  
 }
+.encabezado {
+    width: 365px;
+    height: 60px;
+    margin-top: 38px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.flecha img {
+    width: 28px;
+    height: 28px;
+
+}
+
+.menu img {
+    width: 28px;
+    height: 28px;
+}
+
+.flecha {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 10px;
+}
+
+.vista {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 100px;
+}
+
+.menu {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-left: 100px;
+}
 
 .tarifas {
     background-image: url("/dev/img/tarifas.png");
@@ -16,17 +53,17 @@
 .item {
     display: flex;
     flex-direction: column;
-    width: 345px;
+    width: 300px;
     height: 175px;
     padding: 10px;
     margin-bottom: 10px;
-    background: rgba(255, 0, 128, 0.7);
+    background: rgba(251, 0, 126, 0.7);
 }
 
 .header {
     display: flex;
-    width: 365px;
-    height: 90px;
+    width: 345px;
+    height: 60px;
     background: rgba(126, 255, 255, 0.7);
     align-items: center;
     justify-content: center;
@@ -77,5 +114,25 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    width: 280px;
 }
 
+.ancho_celular {
+    width: 330px;
+}
+
+.productoss {
+    /*border:2px solid magenta;*/
+    height: 482px;
+    width: 340px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0);
+}
+
+.subtitulo{
+    text-align: left;
+    margin-bottom: 10px;
+}
