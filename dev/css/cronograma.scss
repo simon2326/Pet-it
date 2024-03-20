@@ -1,0 +1,151 @@
+// Global styles
+* {
+    margin: 0;
+  }
+  
+  // Sections
+  .seccion {
+    width: 365px;
+    height: 568px;
+    border: 1px solid black;
+  }
+  
+  .ocultar {
+    display: none;
+  }
+  
+  .paseos {
+    background-image: url("/dev/img/cronograma.png");
+    background-size: cover;
+    background-color: blueviolet;
+    /*overflow-x: auto;*/
+  }
+  
+  .item {
+    display: flex;
+    width: 365px;
+    background: rgb(0, 0, 255);
+  }
+  
+  // Header
+  .encabezado {
+    width: 365px;
+    height: 60px;
+    margin-top: 38px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  // Header elements
+  .flecha {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 10px;
+  }
+  
+  .vista {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 100px;
+  }
+  
+  .menu {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-left: 100px;
+  }
+  
+  .flecha img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .menu img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  // Carousel (commented out)
+  /*
+  .carrusel {
+    display: flex;
+    width: 365px;
+    height: 120px;
+    background: rgba(255, 0, 128, 0.7);
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  */
+  
+  // Days grid
+  .dias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    overflow-x: auto;
+  }
+  
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  // Days container
+  .dias {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(128, 255, 0);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: scroll;
+    box-sizing: border-box;
+  }
+  
+  // Months grid
+  .meses {
+    display: grid;
+    background-color: fuchsia;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .mes-principal {
+    font-size: 15px;
+  }
+  
+  // Arrows
+  .flecha1 img {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  
+  .flecha2 img {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+  
+  // Day
+  .dia {
+    cursor: pointer;
+    display: flex;
+    background-color: blueviolet;
+    height: 60px;
+    width: 60px;
+  }  

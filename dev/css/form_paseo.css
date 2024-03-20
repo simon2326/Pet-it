@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    
 }
 
 .seccion {
@@ -11,23 +12,76 @@
 .form_paseo {
     background-image: url("/dev/img/form_paseo.png");
     background-size: cover;
+    overflow-y: auto;
+    width: 365px;
+    height: 568px;
+}
+
+
+.encabezado {
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.flecha {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 10px;
+}
+
+.vista {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.vista h4{
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+/*
+.menu {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-left: 100px;
+}
+*/
+.flecha img {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 25px;
+
+}
+
+.menu img {
+    width: 28px;
+    height: 28px;
 }
 
 .item {
     display: flex;
     flex-direction: column-reverse;
-    width: 345px;
-    height: 60px;
+    width: 328px;
+    height: 70px;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(255, 0, 128, 0.7);
+    background: rgb(255, 0, 128);
 }
 
 .header {
     display: flex;
-    width: 365px;
+    width: 328px;
     height: 90px;
-    background: rgba(126, 255, 255, 0.7);
+    background: rgba(126, 255, 255, 0.973);
     align-items: center;
     justify-content: center;
 }
@@ -42,9 +96,102 @@
 }
 
 .submit {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 0, 0, 0.7);
+    background: rgb(255, 0, 0);
     border-radius: 20px;
+    height: 60px;
+    margin-top: 30px;
 }
+
+.especial1{
+    border-radius: 10px;
+    height: 30px;
+    width: 160px;
+}
+
+.especial2{
+    border-radius: 10px;
+    height: 30px;
+    width: 140px;
+}
+.especial3{
+    border-radius: 10px;
+    height: 30px;
+    width: 50px;
+}
+.especial4{
+    border-radius: 10px;
+    height: 30px;
+    width: 50px;
+    margin-top: 28px;
+}
+.especial5{
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    margin-top: 28px;
+}
+
+.especial6{
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+}
+
+.especial7{
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.titulopaseador{
+    margin-top: 30px;
+}
+
+.titulohora{
+    margin-top: 30px;
+}
+
+.paseadorhora {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    }
+    
+    .hora { grid-area: 1 / 1 / 2 / 2; }
+    .paseador { grid-area: 1 / 2 / 2 / 3; }
+.text {
+    border-radius: 10px;
+    height: 30px;
+}
+
+.raza {
+    display: grid;
+    width: 328px;
+    height: 70px;
+    grid-template-columns: 2fr 1fr;;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div2 text{
+    border-radius: 10px;
+    height: 20px;
+}
+.tres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    }
+    
+    .divdia { grid-area: 1 / 1 / 2 / 2; width: 20px;}
+    .divmes { grid-area: 1 / 2 / 2 / 3; width: 20px;}
+    .divaño { grid-area: 1 / 3 / 2 / 4; width: 20px;}
