@@ -254,3 +254,9 @@
     height: 30px;
     margin-top: 0px;
 }
+
+.cv{
+    height: 80px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
