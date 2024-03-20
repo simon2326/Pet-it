@@ -20,6 +20,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+
 .flecha img {
     width: 28px;
     height: 28px;
@@ -49,7 +50,7 @@
 .tienda {
     background-image: url("/dev/img/tienda.png");
     background-size: cover;
-    
+
 }
 
 .item {
@@ -164,55 +165,79 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    margin-left: 35px;
-    }
-    
-    .div8 { grid-area: 1 / 1 / 2 / 2; }
-    .div9 { grid-area: 1 / 2 / 2 / 3; }
-    .div10 { grid-area: 2 / 1 / 3 / 2; }
-    .div11 { grid-area: 2 / 2 / 3 / 3; }
+    margin-left: 25px;
+}
 
-    .div8, .div9, .div10, .div11, .div1, .div2, .div3, .div4 {
-        position: relative; /* Asegura que la imagen se ajuste correctamente dentro del div */
-        overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda fuera del div */
-    }
+.div8 {
+    grid-area: 1 / 1 / 2 / 2;
+}
 
-    .div8 img, .div9 img, .div10 img, .div11 img {
-        width: 100px; /* Ancho fijo de la imagen */
-        height: 100%; /* Altura del div, lo que permite que la imagen se ajuste verticalmente */
-        object-fit: cover; /* Ajusta la imagen dentro del div sin deformarla */
-        object-position: center; /* Centra la imagen verticalmente dentro del div */
-    }
+.div9 {
+    grid-area: 1 / 2 / 2 / 3;
+}
 
-    .div1 img, .div2 img, .div3 img, .div4 img {
-        width: 60px; /* Ancho fijo de la imagen */
-        height: 50px; /* Altura del div, lo que permite que la imagen se ajuste verticalmente */
-        object-fit: cover; /* Ajusta la imagen dentro del div sin deformarla */
-        object-position: center; /* Centra la imagen verticalmente dentro del div */
-    }
-    
+.div10 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div11 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div8,
+.div9,
+.div10,
+.div11,
+.div1,
+.div2,
+.div3,
+.div4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.div8 img,
+.div9 img,
+.div10 img,
+.div11 img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.div1 img,
+.div2 img,
+.div3 img,
+.div4 img {
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .texto {
     text-align: center;
 }
 
-.item_producto{
-    width:120px;
-    height:200px;
-    /*border:2px solid orange;*/
-    display:inline-block;
-    margin-bottom:5px;
-  }
+.seleccionado {
+    text-decoration: underline;
+}
 
-  .ancho_celular{
-    width:330px;
-  }
+.subtitulo {
+    margin-left: 30px;
+}
 
-  .productoss{
+.ancho_celular {
+    width: 330px;
+}
+
+.productoss {
     /*border:2px solid magenta;*/
-    height:562px;
-    margin-top:0px;
-    text-align:center;
-    overflow-y:scroll;
-    background:rgba(255, 255, 255, 0);
-    margin-bottom:1px;
-  }
+    height: 562px;
+    margin-top: 0px;
+    text-align: center;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0);
+    margin-bottom: 2px;
+}
