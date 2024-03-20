@@ -12,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "sass": "^1.72.0"
   },
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.5",
