@@ -29,6 +29,7 @@
     height: 28px;
     padding-left: 320px;
     padding-top: 20px;
+    cursor: pointer;
 
 
 }
@@ -38,6 +39,7 @@
 }
 
 .logo img {
+    cursor: pointer;
     width: 100px;
     height: 100px;
     position: absolute;

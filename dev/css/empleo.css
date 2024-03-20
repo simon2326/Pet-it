@@ -53,13 +53,16 @@
 }
 
 .flecha img {
+    cursor: pointer;
     width: 28px;
     height: 28px;
     position: relative;
     top: 25px;
     padding: 10px;
 
-}/*
+}
+
+/*
 .solicitud{
     padding-top: 10px;
     position: absolute;
@@ -82,6 +85,7 @@
     align-items: center;
     justify-content: center;
 }
+
 /* 
 .text {
     margin-top: 10px;
@@ -202,9 +206,10 @@
     padding-bottom: 30px;
 }
 
-.divfecha{
+.divfecha {
     grid-area: 1 / 1 / 2 / 4;
 }
+
 .divdia {
     grid-area: 1 / 1 / 2 / 2;
     padding-top: 50px;
@@ -255,7 +260,7 @@
     margin-top: 0px;
 }
 
-.cv{
+.cv {
     height: 80px;
     border-radius: 5px;
     background-color: blueviolet;

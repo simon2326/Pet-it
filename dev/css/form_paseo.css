@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    
+
 }
 
 .seccion {
@@ -43,22 +43,19 @@
     text-align: center;
     margin: 0 auto;
 }
-.vista h4{
+
+.vista h4 {
     position: absolute;
     top: 20px;
     left: 120px;
 }
-/*
-.menu {
-    grid-area: 1 / 3 / 2 / 4;
-    margin-left: 100px;
-}
-*/
+
 .flecha img {
     width: 28px;
     height: 28px;
     position: absolute;
     top: 25px;
+    cursor: pointer;
 
 }
 
@@ -106,52 +103,55 @@
     margin-top: 30px;
 }
 
-.especial1{
+.especial1 {
     border-radius: 10px;
     height: 30px;
     width: 160px;
 }
 
-.especial2{
+.especial2 {
     border-radius: 10px;
     height: 30px;
     width: 140px;
 }
-.especial3{
+
+.especial3 {
     border-radius: 10px;
     height: 30px;
     width: 50px;
 }
-.especial4{
+
+.especial4 {
     border-radius: 10px;
     height: 30px;
     width: 50px;
     margin-top: 28px;
 }
-.especial5{
+
+.especial5 {
     border-radius: 10px;
     height: 30px;
     width: 80px;
     margin-top: 28px;
 }
 
-.especial6{
+.especial6 {
     border-radius: 10px;
     height: 30px;
     width: 80px;
 }
 
-.especial7{
+.especial7 {
     border-radius: 10px;
     height: 30px;
     width: 200px;
 }
 
-.titulopaseador{
+.titulopaseador {
     margin-top: 30px;
 }
 
-.titulohora{
+.titulohora {
     margin-top: 30px;
 }
 
@@ -161,10 +161,16 @@
     grid-template-rows: 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 0px;
-    }
-    
-    .hora { grid-area: 1 / 1 / 2 / 2; }
-    .paseador { grid-area: 1 / 2 / 2 / 3; }
+}
+
+.hora {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.paseador {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
 .text {
     border-radius: 10px;
     height: 30px;
@@ -174,24 +180,37 @@
     display: grid;
     width: 328px;
     height: 70px;
-    grid-template-columns: 2fr 1fr;;
+    grid-template-columns: 2fr 1fr;
+    ;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
-.div2 text{
+.div2 text {
     border-radius: 10px;
     height: 20px;
 }
+
 .tres {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 2fr;
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 0px;
-    }
-    
-    .divdia { grid-area: 1 / 1 / 2 / 2; width: 20px;}
-    .divmes { grid-area: 1 / 2 / 2 / 3; width: 20px;}
-    .divaño { grid-area: 1 / 3 / 2 / 4; width: 20px;}
+}
+
+.divdia {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 20px;
+}
+
+.divmes {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 20px;
+}
+
+.divaño {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 20px;
+}
