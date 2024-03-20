@@ -53,11 +53,11 @@
 .item {
     display: flex;
     flex-direction: column;
-    width: 345px;
+    width: 300px;
     height: 175px;
     padding: 10px;
     margin-bottom: 10px;
-    background: rgba(255, 0, 128, 0.7);
+    background: rgba(251, 0, 126, 0.7);
 }
 
 .header {
@@ -114,5 +114,25 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    width: 280px;
 }
 
+.ancho_celular {
+    width: 330px;
+}
+
+.productoss {
+    /*border:2px solid magenta;*/
+    height: 482px;
+    width: 340px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0);
+}
+
+.subtitulo{
+    text-align: left;
+    margin-bottom: 10px;
+}
