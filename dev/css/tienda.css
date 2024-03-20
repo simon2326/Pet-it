@@ -47,11 +47,7 @@
     margin-left: 100px;
 }
 
-.tienda {
-    background-image: url("/dev/img/tienda.png");
-    background-size: cover;
 
-}
 
 .item {
     display: flex;

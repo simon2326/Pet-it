@@ -45,11 +45,6 @@
     margin-left: 100px;
 }
 
-.tarifas {
-    background-image: url("/dev/img/tarifas.png");
-    background-size: cover;
-}
-
 .item {
     display: flex;
     flex-direction: column;

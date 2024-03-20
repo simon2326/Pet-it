@@ -6,8 +6,6 @@
     width: 365px;
     height: 568px;
     border: 1px solid black;
-    background-image: url("/dev/img/nosotros.png");
-    background-size: cover;
 }
 
 .encabezado {
