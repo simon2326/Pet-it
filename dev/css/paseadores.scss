@@ -1,16 +1,17 @@
+@font-face {
+    font-family: "Gelasio-bold";
+    src: url("/dev/fonts/Gelasio-Bold.woff") format("truetype");
+}
+
 *{
     margin: 0;
 }
-
-html {
-    scroll-behavior: smooth;
-  }
 
 .body{
     overflow: scroll;
 }
 
-.seccion{
+.paseadores{
     max-width: 365px;
     height: 568px;
     border: 1px solid black;
@@ -23,69 +24,86 @@ html {
     display: none;
 }
 
-.home{
-    background-size: cover;
-    background-color: blueviolet;
-}
-
-
 .header{
+    margin-left: 10px;
     width: 365px;
     height: 90px;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 4fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    background: rgba(126, 255, 255, 0.7);
+    grid-column-gap: 15px;
     justify-items: center; 
     align-items: center;
 }
 
-.back {
-    width: 45px;
-    height: auto;
-  }
+.gradiente{
+    height: 90px;
+    display: grid;
+    grid-template-columns: 170px 80px;
+    grid-template-rows: 1fr;
+    justify-items: center; 
+    align-items: center;
+    background-image: linear-gradient(to bottom left, rgb(24, 172, 172), rgba(126, 255, 255, 0.5), rgba(126, 255, 255, 0), rgba(126, 255, 255, 0));
+}
 
-.logo {
-    width: 45px;
-  }
-  
-  .titulo {
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  .menu {
+.back {
     width: 25px;
     height: auto;
   }
 
+.logo {
+    width: 55px;
+  }
+  
+.titulo {
+    font-family:Gelasio-bold;
+    text-align: center;
+    font-size: 15px;
+}
 
-.titulo-pas {
-    width: 340px;
-    margin-top: 0;
+.menu {
+    width: 25px;
+    height: auto;
 }
 
 .texto{
     width: 365px;
     height: 100px;
-    background: rgba(251, 255, 40, 0.7);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50px 50px 0 0;
+    background-image: linear-gradient(to bottom, rgb(71, 188, 161), rgba(140, 217, 190, 0.869), rgba(126, 255, 255, 0));
+}
+
+.titulo-pas {
+    font-family:Gelasio-bold;
+    width: 340px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.descripcion{
+    font-family:Gelasio-bold;
+    width: 340px;
+    margin-left: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(1, 85, 131);
+    background-color: rgb(255, 255, 255, 0.7);
 }
 
 .botones {
-  margin-top: 0 20px;
   display: flex;
-  align-items: center;
-  align-content: center;
   justify-content: center;
-  justify-items: center;
 }
 
 .boton {
-  padding: 10px 20px;
+  font-family:Gelasio-bold;
   font-size: 16px;
-  background-color: #fff;
-  color: black;
+  background-color: #205346;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -93,141 +111,105 @@ html {
 }
 
 .boton:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
-//-------------------------
+//------------ Card del paseador -------------//
 
 .car-paseador{
     max-width: 365px;
-    height: 568px;
-    border: 1px solid black;
-    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
 }
   
 .slider {
-position: absolute;
-top: 10px;
-left: 50%;
-transform: translate(-50%, 0%);
-width: 340px;
-height: 270px;
-/*   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); */
+    width: 340px;
+    height: 270px;
+    margin: 0 auto;
+    //transform: translate(-50%, 0%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .wrapper {
-overflow: hidden;
-position: relative;
-z-index: 1;
-border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
 }
 
 #items {
-width: 10000px;
-position: relative;
-top: -220;
-left: -300px;
+    width: 3000px;
+    position: relative;
+    top: -220;
+    //left: -300px;
 }
 
 #items.shifting {
-transition: left 0.2s ease-out;
+    transition: left 0.2s ease-out;
 }
 
 .slide {
-width: 400px;
-height: 550px;
-cursor: pointer;
-float: left;
-display: flex;
-flex-direction: column;
-justify-content: center;
-transition: all 1s;
-position: relative;
+    width: 400px;
+    height: 550px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    cursor: pointer;
 }
 
-.slider.loaded .slide:nth-child(2),
-.slider.loaded .slide:nth-child(7) {
-background: #ffcf47;
-border-radius: 10px;
-}
-.slider.loaded .slide:nth-child(1),
-.slider.loaded .slide:nth-child(6) {
-background: #7adcef;
-border-radius: 10px;
-}
-.slider.loaded .slide:nth-child(3) {
-background: #dff8ec;
-border-radius: 10px;
-}
-.slider.loaded .slide:nth-child(4) {
-background: #a78df5;
-border-radius: 10px;
-}
-.slider.loaded .slide:nth-child(5) {
-background: #ff8686;
-border-radius: 10px;
-}
+// .slider.loaded .slide:nth-child(2),
+// .slider.loaded .slide:nth-child(7) {
+// background: #ffcf47;
+// border-radius: 10px;
+// }
+// .slider.loaded .slide:nth-child(1),
+// .slider.loaded .slide:nth-child(6) {
+// background: #7adcef;
+// border-radius: 10px;
+// }
+// .slider.loaded .slide:nth-child(3) {
+// background: #dff8ec;
+// border-radius: 10px;
+// }
+// .slider.loaded .slide:nth-child(4) {
+// background: #a78df5;
+// border-radius: 10px;
+// }
+// .slider.loaded .slide:nth-child(5) {
+// background: #ff8686;
+// border-radius: 10px;
+// }
 
 .content {
-width: 400px;
-height: 560px;
-border-radius: 10px;
-box-shadow: 0 6px 6px rgba(0, 0, 0, 0), 0 0 30px rgba(0, 0, 0, 0.1) inset;
-position: relative;
-margin-top: 0px;
+    width: 300px;
+    height: 560px;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    margin-top: 0px;
 }
 
 .up {
-width: 400px;
-height: 640px;
-border-radius: 10px 10px 0 0;
-background: rgba(28, 216, 210, 1);
-background: rgba(28, 216, 210, 1);
-background: -moz-linear-gradient(
-    top,
-    rgba(28, 216, 210, 1) 0%,
-    rgba(147, 237, 199, 1) 100%
-);
-background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(28, 216, 210, 1)),
-    color-stop(100%, rgba(147, 237, 199, 1))
-);
-background: -webkit-linear-gradient(
-    top,
-    rgba(28, 216, 210, 1) 0%,
-    rgba(147, 237, 199, 1) 100%
-);
-background: -o-linear-gradient(
-    top,
-    rgba(28, 216, 210, 1) 0%,
-    rgba(147, 237, 199, 1) 100%
-);
-background: -ms-linear-gradient(
-    top,
-    rgba(28, 216, 210, 1) 0%,
-    rgba(147, 237, 199, 1) 100%
-);
-background: linear-gradient(
-    to bottom,
-    rgba(28, 216, 210, 1) 0%,
-    rgba(147, 237, 199, 1) 100%
-);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cd8d2', endColorstr='#93edc7', GradientType=0 );
+    width: 400px;
+    height: 640px;
+    border-radius: 10px;
+    background: rgba(28, 216, 210, 1);
+    background: rgba(28, 216, 210, 1);
 }
 
 .producto {
-width: 250px;
-height: 300px;
-background-size: 320px 540px;
-background-position: center;
-background-repeat: no-repeat;
-margin-left: calc(50% - 260px);
-position: relative;
-top: 250px;
-border-radius: 10px;
-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    //background-position: center;
+    //background-repeat: no-repeat;
+    //margin-left: calc(50% - 260px);
+    position: relative;
+    top: 250px;
+    border-radius: 10px;
+    //box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pro_1 {
@@ -250,83 +232,83 @@ background-image: url('/dev/img/pasi4.jpg');
 }
 
 .price {
-width: 0px;
-height: 40px;
-border-radius: 2px;
-border-left: 20px solid #ff1f45;
-border-right: 20px solid #ff1f45;
-border-bottom: 10px solid transparent;
-float: right;
-margin-right: 0px;
-top: -20px;
-position: relative;
+    width: 0px;
+    height: 40px;
+    border-radius: 2px;
+    border-left: 20px solid #ff1f45;
+    border-right: 20px solid #ff1f45;
+    border-bottom: 10px solid transparent;
+    float: right;
+    margin-right: 0px;
+    top: -20px;
+    position: relative;
 }
 
 .price p {
-color: #ffffff;
-width: 27px;
-float: right;
-font-size: 2em;
-font-weight: bold;
-margin-top: 25px;
+    color: #ffffff;
+    width: 27px;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 .button {
-font-size: 18px;
-letter-spacing: 2px;
-text-transform: uppercase;
-display: inline-block;
-text-align: center;
-width: 200px;
-font-weight: bold;
-padding: 14px 0px;
-color: #ffffff;
-border-radius: 5px;
-position: relative;
-background-color: #1cd8d2;
-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
-margin-left: calc(150px - 180px);
-top: 270px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    font-weight: bold;
+    padding: 14px 0px;
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    background-color: #1cd8d2;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
+    margin-left: calc(150px - 180px);
+    top: 270px;
 }
 
 .button:hover {
-background-color: #93edc7;
-color: #ffffff;
+    background-color: #93edc7;
+    color: #ffffff;
 }
 
 .control {
-position: absolute;
-top: 100%;
-width: 40px;
-height: 40px;
-background: #fff;
-border-radius: 20px;
-margin-top: -20px;
-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-z-index: 2;
+    position: absolute;
+    top: 100%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
 .prev,
 .next {
-background-size: 22px;
-background-position: center;
-background-repeat: no-repeat;
-cursor: pointer;
-}
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
 
 .prev {
-background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-left: -20px;
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+    left: -20px;
 }
 
 .next {
-background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-right: -20px;
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+    right: -20px;
 }
 
 .prev:active,
 .next:active {
-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 
