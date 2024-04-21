@@ -4,49 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/form_paseo.css">
+    <link rel="stylesheet" href="css/form_paseo.scss">
     <title>Document</title>
 </head>
 
 <body>
-    <section class="seccion form_paseo">
-        <section class=" header">
-            <h4 class="titulo">Agenda tu paseo</h4>
+    <div class="seccion form_paseo">
+        <section class=" item header">
+            <div class="encabezado">
+                <div class="flecha">
+                    <img src="img/izquierda.png"/>
+
+                </div>
+                <div class="vista">
+                    <h4 class="titulo">Agenda tu paseo</h4>
+                </div>
+                
+            </div>
         </section>
-        <section class="item formulario">
+        <div class="item formulario">
             <input class="text" name="id">
             <h4 class="titulo">Nombre completo</h4>
-        </section>
-        <section class="item formulario">
-            <input class="text" name="mascota">
-            <h4 class="titulo">Nombre mascota</h4>
-        </section>
-        <section class="item formulario">
-           <input class="text" name="celular">
-           <h4 class="titulo">Teléfono celular</h4>
-        </section>
-        <section class="item formulario">
+
+        </div>
+        <div class="item formulario raza">
+            <div1>
+                <h4 class="titulo">Nombre mascota</h4>
+                <input class="especial1" name="mascota">
+            </div1>
+            <div2>
+                <h4 class="titulo">Raza</h4>
+                <input class="especial2" name="id">
+
+            </div2>
+        </div>
+        <div class="item formulario">
+            <input class="text" name="celular">
+            <h4 class="titulo">Teléfono celular</h4>
+        </div>
+        <div class="item formulario">
             <input class="text" name="direccion">
             <h4 class="titulo">Dirección</h4>
-        </section>
-        <section class="item formulario">
-            <input class="text" name="fecha">
-            <h4 class="titulo">Fecha</h4>
-        </section>
-        <section class="item formulario">
-            <input class="text" name="hora">
-            <h4 class="titulo">Hora</h4>
-        </section>
-        <section class="item formulario">
-            <input class="text" name="paseador">
-            <h4 class="titulo">Paseador</h4>
-        </section>
-        <section class="item formulario">
-            <button class="boton submit">Guardar</button>
-        </section>
-        
+        </div>
+            <div class="item tres">
+                <div class="divdia">
+                    <h4 class="titulo">Fecha</h4>
+                    <input class="especial3" name="dia">
+                    <h4 class="titulo">Dia</h4>
+                </div>
+                <div class="divmes">
+                    <input class="especial4" name="mes">
+                    <h4 class="titulo">Mes</h4>
+                </div>
+                <div class="divaño">
+                    <input class="especial5" name="año">
+                    <h4 class="titulo">Año</h4>
+                </div>
 
-    </section>
+
+            </div>
+        
+        <div class="item paseadorhora">
+            <div class="hora">
+                <h4 class="titulohora">Hora</h4>
+                <input class="especial6" name="hora">
+            </div>
+            <div class="paseador">
+                <h4 class="titulopaseador">Paseador</h4>
+                <input class="especial7" name="paseador">
+                
+            </div>
+        </div>
+        <div class="item formulario">
+            <button class="boton submit">Agendar</button>
+        </div>
+
+
+    </div>
 
 </body>
 

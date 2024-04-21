@@ -3,26 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.scss">
-    <script type="module" src="js/home.js"></script>
+    <link rel="stylesheet" href="css/index.scss">
+    <script src="js/index.js"></script>
     <title>Document</title>
 </head>
 <body>
     <section class = "seccion home">
         <section class="header">
-            <img src="/dev/img/patas.png" alt="logo" class="logo">
-            <h4 class="titulo">Hola <br> ¿Ya pensaste cómo está tu mascota hoy?</h4>
+            <img src="/dev/img/logo.gif" alt="logo" class="logo">
+            <h4 class="titulo">Hola, ¿ya pensaste cómo está tu mascota hoy?</h4>
             <img src="/dev/img/menu.png" alt="menu" class="menu">
         </section>
-        <div class="carrusel">
-            <div class="carru">
-                <img src="/dev/img/amigos.jpeg" alt="Imagen 1" class="img">
-                <img src="/dev/img/amigos.jpeg" alt="/dev/img/amigos.jpeg" class="img">
-            </div>
-            <ul class="puntos">
-                <li class="punto"></li>
-                <li class="punto"></li>
-            </ul>
+        <div class="contenedor">
+          <div class="imagen actual">
+            <img src="/dev/img/index/perro_gato.jpg" />
+            <div class="texto">Amigos</div>
+          </div>
+          <div class="imagen">
+            <img src="/dev/img/index/amigos.jpeg" />
+            <div class="texto">Compañía</div>
+          </div>
+          <div class="imagen">
+            <img src="/dev/img/index/perritos.jpg" />
+            <div class="texto">Felicidad</div>
+          </div>
+          <div class="imagen">
+            <img src="/dev/img/index/perro_negro.jpg" />
+            <div class="texto">Aventura</div>
+          </div>
+          
+          <a href="#" class="anterior" onclick="anterior();">&#10094;</a>
+          <a href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
+          
+          <div class="puntos">
+            <span class="punto activo" onclick="mostrar(0);"></span>
+            <span class="punto" onclick="mostrar(1);"></span>
+            <span class="punto" onclick="mostrar(2);"></span>
+            <span class="punto" onclick="mostrar(3);"></span>
+          </div>
+          
+          <div class="boton">
+            <a href="#">
+              <img src="https://icons.iconarchive.com/icons/ionic/ionicons/256/pause-icon.png" id="btn" onclick="playpause();" />
+            </a>
+          </div>
         </div>
         <section class="data">
             <h1>Datos curi sos hoy</h1>

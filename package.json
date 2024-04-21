@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
-    "build": "npm run clean & npx parcel build dev/index.html"
+    "build": "npm run clean & npx parcel dev/index.html"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
+<<<<<<< HEAD
     "sass": "^1.72.0"
   },
   "dependencies": {
@@ -118,4 +119,8 @@
     "yallist": "^4.0.0"
   },
   "description": ""
+=======
+    "rimraf": "^5.0.5"
+  }
+>>>>>>> main
 }
