@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Gelasio-bold";
+  src: url("/dev/fonts/Gelasio-Bold.woff") format("truetype");
+}
+
 *{
     margin: 0;
 }
@@ -24,9 +29,7 @@ html {
 }
 
 .home{
-    background-image: url("/dev/img/home.png");
     background-size: cover;
-    background-color: blueviolet;
 }
 
 .header{
@@ -36,18 +39,20 @@ html {
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
-    background: rgba(126, 255, 255, 0.7);
+    //background: rgba(126, 255, 255, 0.2);
     justify-items: center; 
     align-items: center;
 }
 
   .logo {
-    width: 45px;
+    width: 60px;
+    margin-left: 15px;
   }
   
   .titulo {
-    margin-left: 20px;
-    font-size: 18px;
+    font-family: Gelasio-bold;
+    margin-left: 8px;
+    font-size: 15px;
   }
   
   .menu {
@@ -61,7 +66,6 @@ html {
   width: 96%;
   max-width: 365px;
   height: 230px;
-  //background-color: black;
   border-radius: 15px;
   margin-left: 8px;
   overflow: hidden;
@@ -73,6 +77,8 @@ html {
   height: 100%;
   visibility: hidden;
   opacity: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagen img {
@@ -85,11 +91,14 @@ html {
 
 .texto {
   position: absolute;
-  width: 100%;
+  width: 50%;
   text-align: center;
   top: 82%;
+  left: 25%;
   color: white;
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
 }
 
 .contenedor a{
@@ -107,8 +116,15 @@ html {
 
 .boton {
   position: absolute;
-  top: 5%;
-  left: 92%;
+  top: 11%;
+  left: 88.5%;
+}
+
+.boton img {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 
 .puntos {

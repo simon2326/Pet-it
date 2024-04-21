@@ -38,7 +38,7 @@ var actual = 0;
         mostrar(actual);
     }
     
-    var velocidad = 2000;
+    var velocidad = 3000;
     var play = setInterval("siguiente()", velocidad);
     
     function playpause(){
