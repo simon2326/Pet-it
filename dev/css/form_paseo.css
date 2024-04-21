@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Gelasio-bold";
+    src: url("/dev/fonts/Gelasio-Bold.woff") format("truetype");
+  }
 * {
     margin: 0;
 
@@ -10,11 +14,18 @@
 }
 
 .form_paseo {
-    background-image: url("/dev/img/form_paseo.png");
-    background-size: cover;
+    
     overflow-y: auto;
     width: 365px;
     height: 568px;
+}
+
+.fondo{
+    width: 97%;
+    height: 530px;
+    background-color: rgb(28,100,100,0.7);
+    border-radius: 20px;
+    margin-left: 5px;
 }
 
 
@@ -45,16 +56,19 @@
 }
 
 .vista h4 {
-    position: absolute;
+    /* position: absolute;
     top: 20px;
-    left: 120px;
+    left: 120px; */
+    margin-right: 60px;
+    margin-top: 10px;
 }
 
 .flecha img {
     width: 28px;
     height: 28px;
-    position: absolute;
-    top: 25px;
+    /* position: absolute;
+    top: 25px; */
+    margin-top: 20px;
     cursor: pointer;
 
 }
@@ -71,14 +85,12 @@
     height: 70px;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgb(255, 0, 128);
 }
 
 .header {
     display: flex;
     width: 328px;
     height: 90px;
-    background: rgba(126, 255, 255, 0.973);
     align-items: center;
     justify-content: center;
 }
@@ -86,6 +98,7 @@
 .text {
     margin-top: 10px;
     height: 80px;
+    background-color: rgb(190,211,211);
 }
 
 .titulo {
@@ -97,28 +110,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 0, 0);
+    background: rgb(124,124,124, 0.3);
     border-radius: 20px;
     height: 60px;
+    width: 70%;
     margin-top: 30px;
+    margin-left: 50px;
+    border-width: 2px;
+    border-color:#000;
+    
 }
 
 .especial1 {
     border-radius: 10px;
-    height: 30px;
+    height: 27px;
     width: 160px;
+    margin-top: 10px;
+    background-color: rgb(190,211,211);
 }
 
 .especial2 {
     border-radius: 10px;
-    height: 30px;
+    height: 27px;
     width: 140px;
+    margin-top: 10px;
+    background-color: rgb(190,211,211);
 }
 
 .especial3 {
     border-radius: 10px;
     height: 30px;
     width: 50px;
+    background-color: rgb(190,211,211);
 }
 
 .especial4 {
@@ -126,6 +149,7 @@
     height: 30px;
     width: 50px;
     margin-top: 28px;
+    background-color: rgb(190,211,211);
 }
 
 .especial5 {
@@ -133,18 +157,21 @@
     height: 30px;
     width: 80px;
     margin-top: 28px;
+    background-color: rgb(190,211,211);
 }
 
 .especial6 {
     border-radius: 10px;
     height: 30px;
     width: 80px;
+    background-color: rgb(190,211,211);
 }
 
 .especial7 {
     border-radius: 10px;
     height: 30px;
     width: 200px;
+    background-color: rgb(190,211,211);
 }
 
 .titulopaseador {
@@ -213,4 +240,19 @@
 .divaño {
     grid-area: 1 / 3 / 2 / 4;
     width: 20px;
+}
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393812;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
 }
