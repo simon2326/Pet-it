@@ -1,4 +1,3 @@
-//https://www.cssscript.com/demo/draggable-touch-slider-carousel/
 var slider = document.getElementById("slider"),
   sliderItems = document.getElementById("items"),
   prev = document.getElementById("prev"),

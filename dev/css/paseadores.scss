@@ -124,9 +124,7 @@
   
 .slider {
     width: 340px;
-    height: 270px;
     margin: 0 auto;
-    //transform: translate(-50%, 0%);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -141,7 +139,8 @@
     width: 3000px;
     position: relative;
     top: -220;
-    //left: -300px;
+    margin: 0 auto;
+    left: 0px;
 }
 
 #items.shifting {
@@ -149,8 +148,7 @@
 }
 
 .slide {
-    width: 400px;
-    height: 550px;
+    width: 340px;
     float: left;
     display: flex;
     flex-direction: column;
@@ -159,58 +157,29 @@
     cursor: pointer;
 }
 
-// .slider.loaded .slide:nth-child(2),
-// .slider.loaded .slide:nth-child(7) {
-// background: #ffcf47;
-// border-radius: 10px;
-// }
-// .slider.loaded .slide:nth-child(1),
-// .slider.loaded .slide:nth-child(6) {
-// background: #7adcef;
-// border-radius: 10px;
-// }
-// .slider.loaded .slide:nth-child(3) {
-// background: #dff8ec;
-// border-radius: 10px;
-// }
-// .slider.loaded .slide:nth-child(4) {
-// background: #a78df5;
-// border-radius: 10px;
-// }
-// .slider.loaded .slide:nth-child(5) {
-// background: #ff8686;
-// border-radius: 10px;
-// }
-
-.content {
-    width: 300px;
-    height: 560px;
-    border-radius: 10px;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0), 0 0 30px rgba(0, 0, 0, 0.1) inset;
-    position: relative;
-    margin-top: 0px;
-}
-
 .up {
-    width: 400px;
+    width: 340px;
     height: 640px;
     border-radius: 10px;
-    background: rgba(28, 216, 210, 1);
-    background: rgba(28, 216, 210, 1);
+    background: rgb(20, 106, 103);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .producto {
-    width: 400px;
+    width: 280px;
     height: 300px;
     background-size: cover;
-    //background-position: center;
-    //background-repeat: no-repeat;
-    //margin-left: calc(50% - 260px);
+    background-position: center;
+    margin: 0 auto;
+    //margin-left: calc(50% - 260px); //18px
     position: relative;
-    top: 250px;
+    top: 100px;
     border-radius: 10px;
-    //box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .pro_1 {
 background-image: url('/dev/img/pasi.jpg');
@@ -233,42 +202,32 @@ background-image: url('/dev/img/pasi4.jpg');
 
 .price {
     width: 0px;
-    height: 40px;
-    border-radius: 2px;
-    border-left: 20px solid #ff1f45;
-    border-right: 20px solid #ff1f45;
+    height: 30px;
+    border-radius: 5px;
+    border-left: 15px solid #1f6dff;
+    border-right: 15px solid #1f6dff;
     border-bottom: 10px solid transparent;
-    float: right;
-    margin-right: 0px;
-    top: -20px;
     position: relative;
-}
-
-.price p {
-    color: #ffffff;
-    width: 27px;
-    float: right;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 25px;
+    float: left;
+    top: -20px;
+    right: 10px;
 }
 
 .button {
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
     width: 200px;
-    font-weight: bold;
-    padding: 14px 0px;
+    padding: 10px 0px;
     color: #ffffff;
     border-radius: 5px;
     position: relative;
-    background-color: #1cd8d2;
+    background-color: #051211;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
-    margin-left: calc(150px - 180px);
-    top: 270px;
+    margin-left: calc(50% - 100px);
+    top: 110px;
 }
 
 .button:hover {
@@ -278,10 +237,10 @@ background-image: url('/dev/img/pasi4.jpg');
 
 .control {
     position: absolute;
-    top: 100%;
+    top: 72%;
     width: 40px;
     height: 40px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 20px;
     margin-top: -20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -298,12 +257,12 @@ background-image: url('/dev/img/pasi4.jpg');
 
 .prev {
     background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-    left: -20px;
+    left: 8px;
 }
 
 .next {
     background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-    right: -20px;
+    right: 8px;
 }
 
 .prev:active,
