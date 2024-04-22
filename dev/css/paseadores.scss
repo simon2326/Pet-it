@@ -3,12 +3,13 @@
     src: url("/dev/fonts/Gelasio-Bold.woff") format("truetype");
 }
 
+
 *{
     margin: 0;
 }
 
 .body{
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .paseadores{
@@ -130,9 +131,10 @@
 
 .wrapper {
     overflow: hidden;
+    height: 420px;
     position: relative;
     z-index: 1;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #items {
@@ -173,31 +175,112 @@
     background-size: cover;
     background-position: center;
     margin: 0 auto;
-    //margin-left: calc(50% - 260px); //18px
+    top: -10px;
+    transition: transform .2s;
     position: relative;
-    top: 100px;
     border-radius: 10px;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
+//----
+.card__flip:hover .card__container, .card__flip.hover .card__container {
+    transform: rotateY(180deg);
+  }
+  .card__container {
+    transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-style: preserve-3d;
+    transform-origin: center;
+  }
+  .card {
+    background:  linear-gradient(-45deg, rgba(255, 255, 255, .1) 100px ,transparent 0),
+                 linear-gradient(45deg, rgba(255, 255, 255, .1) 100px ,transparent 0),
+                 linear-gradient(-45deg, rgba(255, 255, 255, .1) 300px ,transparent 0),
+                 linear-gradient(45deg, rgba(255, 255, 255, .1) 300px ,transparent 0),
+                 linear-gradient(0deg, #749BE1 150px, #9267C7);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+    color: white;
+    height: 300px;
+    top: 110px;
+    margin: 0 auto;
+    padding: 30px 15px 15px;
+    position: relative;
+    text-align: center;
+    overflow:hidden;
+    width: 280px;
+    transition: transform .2s;
+
+    &.card--front {
+      backface-visibility: hidden;
+      transform: rotateY(0deg);
+      z-index: 2;
+    }
+    &.card--back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 110px;
+      transform: rotateY(180deg);
+    }
+    
+    &::after {
+      content: "";
+      background: rgba(255,255,255, .1);
+      border-radius:10%;
+      height: 300px;
+      margin-left: -280px;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      width: 280px;
+    }
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 5px 0 15px;
+  }
+  
+  .flip {
+    background: rgba(255,255,255,.1);
+    border-radius: 50%;
+    height: 100px;
+    margin-left: -50px;
+    position: absolute;
+    bottom:-60px;
+    left: 50%;
+    width: 100px;
+    
+    span {
+      position: relative;
+      top: 20px;
+    }
+  }
+
+
+
+.producto:hover {
+    transform: scale(1.05);
+}
 
 .pro_1 {
-background-image: url('/dev/img/pasi.jpg');
+    background-image: url('/dev/img/pasi.jpg');
 }
 
 .pro_2 {
-background-image: url('/dev/img/pasi2.jpg');
+    background-image: url('/dev/img/pasi2.jpg');
 }
 
 .pro_3 {
-background-image: url('/dev/img/pasi3.jpg');
+    background-image: url('/dev/img/pasi3.jpg');
 }
 .pro_4 {
-background-image: url('/dev/img/pasi3.jpg');
+    background-image: url('/dev/img/pasi3.jpg');
 }
 
 .pro_5 {
-background-image: url('/dev/img/pasi4.jpg');
+    background-image: url('/dev/img/pasi4.jpg');
 }
 
 .price {
@@ -209,8 +292,8 @@ background-image: url('/dev/img/pasi4.jpg');
     border-bottom: 10px solid transparent;
     position: relative;
     float: left;
-    top: -20px;
-    right: 10px;
+    top: -12px;
+    right: 8px;
 }
 
 .button {
@@ -227,7 +310,7 @@ background-image: url('/dev/img/pasi4.jpg');
     background-color: #051211;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.1);
     margin-left: calc(50% - 100px);
-    top: 110px;
+    top: 115px;
 }
 
 .button:hover {
@@ -270,5 +353,45 @@ background-image: url('/dev/img/pasi4.jpg');
     transform: scale(0.8);
 }
 
+.texto-job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 365px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 0px 0px 50px 50px;
+    background-image: linear-gradient(to top, rgb(71, 188, 161), rgba(140, 217, 190, 0.869), rgba(126, 255, 255, 0));
+}
 
 
+.titulo-job {
+    font-family:Gelasio-bold;
+    width: 340px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.descripcion-job{
+    font-family:Gelasio-bold;
+    width: 340px;
+    margin-left: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(1, 85, 131);
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.boton-job{
+    font-family:Gelasio-bold;
+    font-size: 16px;
+    width: 60%;
+    background-color: #205346;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
