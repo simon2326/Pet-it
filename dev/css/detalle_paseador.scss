@@ -158,7 +158,8 @@ h1, h2, h3, h4, h5{
 
 .profile-long{
     display:grid;
-    grid-template-columns:repeat(4,1fr) 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding:10px 20px 15px;
     margin:0 auto;
     max-width:300px;
@@ -183,22 +184,28 @@ h1, h2, h3, h4, h5{
 }
 
 .like-button {
+    grid-column:5/6;
+    grid-row:1;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .like-button.animated {
+
+.like-button.animated {
     -webkit-animation: pop 0.9s both;
     animation: pop 0.9s both;
-  }
-  .like-button svg {
+}
+
+.like-button svg {
     opacity: 1;
-  }
-  .like-button svg path {
+}
+
+.like-button svg path {
     fill: #333;
     transition: fill .4s ease-out;
-  }
-  .like-button.active svg path {   
+}
+
+.like-button.active svg path {   
     fill: #2196f3;
-   }
+}
   
