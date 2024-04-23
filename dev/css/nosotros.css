@@ -72,6 +72,7 @@
     text-align: center;
     font-size: 24px;
     margin-bottom: 5px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .contenido {
@@ -80,18 +81,11 @@
     flex-direction: column;
 }
 
-.texto1 {
-    position: absolute;
-    width: 200px;
+.texto {
     position: relative;
+    width: 205px;
     text-align: center;
-}
-
-.texto2 {
-    position: absolute;
-    width: 150px;
-    position: relative;
-    text-align: center;
+    font-size: small;
 }
 
 .parent {
@@ -114,44 +108,30 @@
 
 .div3 {
     grid-area: 2 / 1 / 3 / 2;
-    /*margin-top: 20px;*/
-    margin-left: 40px;
     position:absolute;
     bottom: 20px;
 }
 
 .div4 {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 3 / 3; 
     margin-left: 20px;
-    
+    margin-top: -40px; 
 }
 
 .div5 {
     grid-area: 3 / 1 / 4 / 2;
     overflow: hidden;
-    position:absolute;
-    bottom: 120px;
-}
-/*
-.div5::before {
-    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(221, 23, 23, 0.7);
-    border-radius: 10px; 
-    z-index: -1; 
+    bottom: 100px;
+    margin-top: -10px;
 }
-*/
-
 
 .div6 {
     grid-area: 3 / 2 / 4 / 3;
     position: absolute;
-    bottom: 180px;
-    left: 160px;
+    bottom: 210px;
+    left: 170px;
+    justify-content:space-around;
 }
 
 .div1,
@@ -162,8 +142,6 @@
     margin-left: auto;
 }
 
-
-
 .div1 img,
 .div4 img {
     width: 140px;
@@ -171,29 +149,30 @@
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
+    box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.5);
 }
 
 .equipo-container {
-    
-    justify-content: space-around;
     margin-top: 5px;
     top: 0;
     left: 0;
     width: 140px;
     height: 140px;
     margin-left: 30px;
-    background-color: rgba(158, 127, 127, 0.8); 
+    background-color:rgba(126, 255, 255, 0.7); 
     border-radius: 10px; 
     z-index: -1; 
 }
 
 .persona {
     text-align: center;
+    
 }
 .persona1 {
     position: absolute;
     bottom: 70px;
     left: 35px;
+    
 }
 .persona2 {
     position: absolute;
@@ -216,10 +195,10 @@
     padding-left: 5px;
     border-radius: 50%; 
     margin-bottom: -3px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .maps {
-    
     display: flex;
     justify-content: space-around;
     top: 0;
@@ -227,18 +206,37 @@
     width: 140px;
     height: 30px;
     margin-left: 30px;
-    background-color: rgb(177, 177, 177); 
+    background-color: rgb(255, 255, 255); 
     border-radius: 10px; 
     z-index: -1; 
+    font-size: small;
+    border: 3px solid rgb(126, 255, 255);
 }
 
 .donar {
-    justify-content: space-around;
     width: 140px;
     height: 30px;
     margin-left: 30px;
-    background-color: rgb(132, 132, 132); 
+    background-color: rgb(126, 255, 255); 
     border-radius: 10px; 
-    z-index: -1; 
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.texto1 {
+    position: relative;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 18px;
+    color:rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.texto2 {
+    position: relative;
+    top: 4px;
+    text-align: center;
+    font-size: 18px;
+    color:rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
