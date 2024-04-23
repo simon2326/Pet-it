@@ -50,13 +50,22 @@ body{
 }
 
 .flecha {
+}
+
+.flecha {
     grid-area: 1 / 1 / 2 / 2;
     margin-left: 10px;
 }
 
 .vista {
+}
+
+.vista {
     grid-area: 1 / 2 / 2 / 3;
     margin-left: 100px;
+}
+
+.menu {
 }
 
 .menu {
@@ -67,6 +76,10 @@ body{
 .flecha img {
     width: 28px;
     height: 28px;
+
+}
+
+.menu img {
 
 }
 
@@ -90,6 +103,9 @@ body{
 
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
 }
 
 .div2 {
