@@ -10,8 +10,6 @@
 }
 
 .empleo {
-    background-image: url("/dev/img/empleo.png");
-    background-size: cover;
     overflow-y: auto;
     width: 365px;
     height: 568px;
@@ -28,8 +26,15 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background: rgb(126, 255, 255);
 
+}
+
+.fondo{
+    width: 97%;
+    height: 750px;
+    background-color: rgb(28,100,100,0.7);
+    border-radius: 20px;
+    margin-left: 5px;
 }
 
 .flecha {
@@ -74,7 +79,6 @@
     height: 70px;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgb(255, 0, 128);
 }
 
 .header {
@@ -100,10 +104,12 @@
 .text {
     border-radius: 10px;
     height: 30px;
+    margin-right: 3px;
+    background-color: rgb(190,211,211);
 }
 
 .checkboxes {
-    background-color: rgb(255, 0, 128);
+    
     display: grid;
     /*grid-template-rows: 0.5fr repeat(2, 1.16fr);*/
     grid-template-rows: repeat(3, 1fr);
@@ -163,7 +169,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: #fcfff4;
+        background: rgb(190,211,211);
         background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
         border-radius: 4px;
         box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
@@ -233,6 +239,7 @@
     border-radius: 10px;
     height: 30px;
     width: 50px;
+    background-color: rgb(190,211,211);
 }
 
 .especial4 {
@@ -240,6 +247,7 @@
     height: 30px;
     width: 50px;
     margin-top: 28px;
+    background-color: rgb(190,211,211);
 }
 
 .especial5 {
@@ -247,6 +255,7 @@
     height: 30px;
     width: 80px;
     margin-top: 28px;
+    background-color: rgb(190,211,211);
 }
 
 .submit {
@@ -254,14 +263,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 0, 0);
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 50px;
     border-radius: 20px;
     height: 30px;
-    margin-top: 0px;
+    background: rgb(86,86,86);
 }
 
 .cv {
     height: 80px;
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color: rgb(190,211,211);
+    margin-right: 10px;
+    margin-top: 30px;
+}
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393812;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
 }

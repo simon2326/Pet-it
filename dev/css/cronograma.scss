@@ -1,6 +1,15 @@
+@font-face {
+    font-family: "Gelasio-bold";
+    src: url("/dev/fonts/Gelasio-Bold.woff") format("truetype");
+  }
+
 * {
     margin: 0;
 
+}
+
+body{
+    overflow: hidden;
 }
 
 .seccion {
@@ -8,6 +17,7 @@
     height: 568px;
     border: 1px solid black;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .ocultar {
@@ -15,16 +25,15 @@
 }
 
 .paseos {
-    background-image: url("/dev/img/cronograma.png");
+    // background-image: url("/dev/img/cronograma.png");
     background-size: cover;
-    background-color: blueviolet;
-    /*overflow-x: auto;*/
+    // background-color: blueviolet;
+    //overflow: scroll;
 }
 
 .item {
     display: flex;
     width: 365px;
-    background: rgb(0, 0, 255);
 }
 
 .encabezado {
@@ -41,8 +50,14 @@
 }
 
 .flecha {
+}
+
+.flecha {
     grid-area: 1 / 1 / 2 / 2;
     margin-left: 10px;
+}
+
+.vista {
 }
 
 .vista {
@@ -51,8 +66,11 @@
 }
 
 .menu {
+}
+
+.menu {
     grid-area: 1 / 3 / 2 / 4;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .flecha img {
@@ -62,17 +80,25 @@
 }
 
 .menu img {
+
+}
+
+.menu img {
     width: 28px;
     height: 28px;
 }
 
 .dias {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 0px;
-    overflow-x: auto;
+    width: 100%;
+    height: 80px;
+    // background-color: rgb(128, 255, 0);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .div1 {
@@ -80,39 +106,51 @@
 }
 
 .div2 {
-    grid-area: 1 / 2 / 2 / 3;
 }
 
-.dias {
-    width: 100%;
-    height: 80px;
-    background-color: rgb(128, 255, 0);
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    overflow-x: scroll;
-    box-sizing: border-box;
-
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .meses {
     display: grid;
-    background-color: fuchsia;
+    // background-color: fuchsia;
     grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 10px;
+    grid-column-gap: 0px;
     grid-row-gap: 0px;
     align-content: center;
     align-items: center;
+
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
 }
 
 .mes-principal {
+    flex: 0 0 auto;
     font-size: 15px;
-
+    height: 50px;
+    width: 365px;
+    //background-color: rgb(124,124,124,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border-radius: 10px;
 }
 
-.flecha1 img {
+.mes {
+    flex: 0 0 auto;
+    font-size: 15px;
+    width: 365px; /* Ajusta el tamaño de cada mes según sea necesario */
+    height: 50px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecha1 img{
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -121,30 +159,76 @@
 
 }
 
-.flecha2 img {
+.flecha2 img{
     cursor: pointer;
     width: 25px;
     height: 25px;
+    margin-left: 5px;
+}
 
+.flechas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 250px;
+    grid-row-gap: 200px;
+}
+
+.flecha img{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .dia {
     cursor: pointer;
-    display: flex;
-    background-color: blueviolet;
-    height: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 60px;
-    border-radius: 10px;
-    margin-top: 0px;
-    text-align: center;
+    height: 60px;
+    background: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: rgb(28,100,100);
     justify-content: center;
-    margin-left: 20px;
-    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .dia p {
     font-size: 40px;
     margin-top: 8px;
+}
+
+.dia-principal{
+    cursor: pointer;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: rgb(28,100,100);
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.dia-principal p {
+
+    font-size: 50px;
+    margin-top: 2px;
+}
+
+
+.carrusel{
+    height: auto;
+    /*overflow: scroll;*/
 }
 
 .carrusel img {
@@ -155,20 +239,21 @@
 }
 
 .cronograma {
+    position: relative;
     width: 365px;
-    height: 362px;
-    background: rgb(255, 166, 0);
-    overflow: hidden;
+    height: auto;
+    // background-color: red;
+    // background: rgb(255, 166, 0);
 }
 
-.titulo {
-    font-size: 13px;
+.h4 {
+    font-family: Gelasio-bold;
+    font-size: 22px;
 }
 
 .cronograma h1 {
-    position: absolute;
-    left: 30px;
-    top: 220px
+   margin-left: 10px;
+   margin-top:10px;
 }
 
 .anterior,
@@ -184,33 +269,51 @@
 
 .day h3 {
     margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .calendar {
-    position: absolute;
     margin-top: 30px;
-    width: 320px;
+    width: 100%;
     height: 320px;
     align-items: center;
     justify-content: center;
-    left: 25px;
-    top: 220px;
-    overflow: hidden;
+    //overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393812;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
 }
 
 .day-and-activity {
-    display: grid;
+    color: black;
+    border-radius: 14px;
     grid-template-columns: 20% 60% 20%;
     align-items: center;
-    border-radius: 14px;
-    margin-bottom: 5px;
-    color: #484d53;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
-    overflow: hidden;
+    margin: 10px auto;
+    display: grid;
+    box-shadow: 0 1px 3px #00000029;
+    width: 90%;
+    margin-left: 10px;
 }
 
 .activity-one {
-    background-color: rgb(96, 211, 20);
+    background-color: rgb(124,124,124)
 }
 
 
@@ -228,7 +331,8 @@
 
 
 .activity {
-    border-left: 3px solid #484d53;
+    border-left: 3px solid black;
+    margin-right: 3px;
 }
 
 .participants {
